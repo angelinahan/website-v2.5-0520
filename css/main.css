@@ -1,0 +1,157 @@
+li {
+    display: inline;
+}
+
+hr {
+    height: 2px;
+    background-color: blue;
+}
+
+.header-item {
+    padding: 8px;
+}
+
+#title {
+    display: flex; 
+    justify-content: center;
+    font-size: 40px;
+    width: 33.3%;
+}
+
+.icon {
+    padding: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+#icon-group a {
+    display: flex;
+    float: right;
+}
+
+.icon-wrapper {
+    display:inline-flex;
+    justify-content: right;
+}
+
+.header {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: Poppins;
+    color: blue;
+}
+
+#header-text {
+    display:flex;
+    justify-content: left;
+    font-size: 15px;
+    width: 33.3%;
+}
+
+#icon-group {
+    display: flex;
+    justify-content: right;
+    width: 33.3%;
+}
+
+#intro {
+    display: flex; 
+    margin: auto;
+    justify-content: center;
+    width: 70%;
+    font-size: 40px;
+    font-family: Poppins;
+}
+
+#project-header {
+    width: 70%;
+    margin: auto;
+    font-family: Poppins;
+    font-size: 40px;
+    color: blue;
+}
+
+
+#proj-wrapper {
+    position: relative;
+    width: 80%;
+    margin:auto;
+}
+
+/*	.project {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    background-color: green;
+    }*/
+
+    #proj-wrapper img {
+        width: 40%;
+        height: auto;
+    }
+
+    #proj-text {
+        font-family: Poppins;
+        font-size: 20px;
+
+    }
+
+    #footer {
+        text-align: center;
+        margin: auto;
+        font-family: Poppins;
+        color: blue;
+    }
+
+    #proj1 {
+        position: relative;
+        margin: auto;
+        padding: 60px;
+    }
+
+    #proj2 {
+        position: relative;
+        margin: auto;
+    }
+
+    @media only screen and (max-width: 1075px) {
+        #proj-wrapper {
+            width: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        #proj-wrapper img{
+            width: 95%;
+            height: auto;
+            margin: auto;
+        }
+
+        #proj1 {
+            position: relative;
+            padding: 30px;
+            top: 0px;
+            left: 0px;
+            margin: auto;
+        }
+
+        #proj2 {
+            position: relative;
+            padding: 30px;
+            top: 0px;
+            left: 0px;
+            margin: auto;
+        }
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .sticky + .content {
+        padding-top: 102px;
+    }
