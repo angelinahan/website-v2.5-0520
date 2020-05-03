@@ -1,0 +1,143 @@
+  
+    li {
+        display: inline;
+    }
+
+    li a {
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    #nav-title {
+        text-align: left;
+    }
+
+    #nav-links {
+        display: block;
+        bottom: 0px;
+        text-align: right;
+    }
+
+    ul {
+        display: inline;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        align-items: baseline;
+    }
+
+	hr {
+		height: 2px;
+		background-color: blue;
+	}
+
+	#title {
+		font-size: 40px;
+	}
+
+	#icon-group a {
+		display: flex;
+		float: right;
+	}
+
+	.icon-wrapper {
+		display:inline-flex;
+		justify-content: right;
+	}
+
+	.header {
+        grid-column: 2 / span 4;
+        grid-row: 1 / span 1;
+        font-family: Poppins;
+        padding-top: 30px;
+    }
+
+	#icon-group img {
+		display: flex;
+		justify-content: right;
+        width: 1.5rem;
+        height: auto;
+        padding: 5px;
+    }
+
+	#proj-wrapper {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        grid-template-rows: 5% auto auto auto auto auto auto auto auto;
+        column-gap: 5%;
+        row-gap: 5%;
+    }
+    
+	.project img {
+		width: 100%;
+        height: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.proj-text {
+		font-family: Jost;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .proj-categories {
+        font-family: Poppins;
+        font-size: 15px;
+    }
+
+	#footer {
+		font-family: Poppins;
+        grid-column: 2 / span 4;
+        grid-row: 6 / span 1;
+	}
+
+	#proj1 {
+        grid-column: 2 / span 2;
+        grid-row: 2 / span 2;
+        background: lightblue;
+	}
+
+	#proj2 {
+        grid-column: 4 / span 2; 
+        grid-row: 3 / span 2;
+        background: lightgoldenrodyellow;
+    }
+        
+    #proj3 {
+        grid-column: 3 / span 1; 
+        grid-row: 4 / span 2;
+        background: lightpink;
+    }
+
+    #proj4 {
+        grid-column: 4 / span 1;
+        grid-row: 5 / span 1;
+        background: lightsteelblue;
+    }
+    
+    .project img:hover {
+        opacity: 0.8;
+        transition: 0.5s;
+    }
+
+	@media only screen and (max-width: 1075px) {
+			#proj-wrapper {
+                display: block;
+				width: 100%;
+				position: relative;
+				margin: auto;
+			}
+
+			#proj-wrapper img{
+				width: 100%;
+				height: auto;
+				margin: auto;
+			}
+
+			#proj-wrapper div {
+				position: relative;
+				padding: 30px;
+				margin: auto;
+			}
+		}
