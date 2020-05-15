@@ -6,86 +6,49 @@
 	<title>Angelina Han</title>
 	<!--links to CSS stylesheet-->
 <!-- 	<link rel="stylesheet" type="text/css" href="css/start.css"> -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Playfair+Display|Libre+Baskerville|Nunito-Sans">
-	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Playfair+Display|Libre+Baskerville|Jost">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<script src="../js/jquery-3.5.0.min.js"></script>
 </head>
 
 <body>
-	<div class="header" id="header">
-		<li id = "title">Angelina Han</li>
-		<div id = "icon-group">
-			<a href="https://www.linkedin.com/in/angelinahan"><img class="icon" id="linkedin" src="../assets/icons/linkedIn.png" alt="LinkedIn logo"></a>
-			<a href="https://github.com/angelinahan"><img class="icon" id="github" src="../assets/icons/github.png" alt="GitHub logo"></a>
-		</div>
-	</div>
-	<hr>
-	<div class = "content">
 	<div id = "proj-wrapper">
+		<div class="header" id="header">
+			<ul>
+					<li id ="title"><a href="index.html">Angelina Han</a></li>
+					<li class="nav-link"><a href="index.html">work</a></li>
+					<li class="nav-link"><a href="about.html">about</a></li>
+			</ul>
+			<hr>
+		</div>
 		<div class="project" id="proj1">
-			<img id = "proj1-img" src='../assets/project-covers/desktop-mindfulness-cover.jpg' alt='screenshot of my website, Desktop Mindfulness'>
-			<p id="proj-text">01. Desktop Mindfulness</p>
-			<p>web development | ux</p>
+			<img id = "proj1-img" src='../assets/project-covers/desktop-mindfulness-illus.jpg' alt='screenshot of my website, Desktop Mindfulness'>
+			<p class="proj-text">01. Desktop Mindfulness</p>
+			<p class="proj-categories">web development | UX </p>
 		</div>
 		<div class="project" id="proj2">
-			<img id = "proj2-img" src='../assets/project-covers/systems.jpg' alt='screenshot of my website, Desktop Mindfulness'>
-			<p id="proj-text">02. Systems</p>
-			<p>graphic design</p>
+			<img id = "proj2-img" src='../assets/project-covers/systems.jpg' alt='poster about an architecture school'>
+			<p class="proj-text">02. Systems</p>
+			<p class="proj-categories">graphic design</p>
+		</div>
+		<div class="project" id="proj3">
+			<img id = "proj3-img" src='../assets/project-covers/haus-of-taste-poster2.8.jpg' alt='poster advertising a house show'>
+			<p class="proj-text">03. Assorted Posters</p>
+			<p class="proj-categories">graphic design | illustration</p>
+		</div>
+		<div class="project" id="proj4">
+			<img id = "proj4-img" src='../assets/project-covers/surrealLandscape.jpg' alt='landscape painting of a red stone arch and various foliage'>
+			<p class="proj-text">04. Art and Illustration</p>
+			<p class="proj-categories">painting | illustration</p>
+		</div>
+		<div id ='footer'>
+			<hr>
+			<p>Made with &#9829; by Angelina Han. &copy; 2020</p>
+			<div id = "icon-group">
+				<a href="https://www.linkedin.com/in/angelinahan"><img class="icon" id="linkedin" src="../assets/icons/linkedIn.png" alt="LinkedIn logo"></a>
+				<a href="https://github.com/angelinahan"><img class="icon" id="github" src="../assets/icons/github.png" alt="GitHub logo"></a>
+			</div>
 		</div>
 	</div>
-	<div id ='footer'>
-		<hr>
-		<p>Made with &#9829; by Angelina Han. &copy; 2020</p>
-	</div>
-	</div>
 </body>
-
-
-
-
-	<!-- loads JavaScript file -->
-	<script src="js/start.js"></script>
-
-	<script>
-		window.onscroll = function() {myFunction()};
-
-		var header = document.getElementById("header");
-		var sticky = header.offsetTop;
-
-		function myFunction() {
-			if (window.pageYOffset > sticky) {
-				header.classList.add("sticky");
-			} else {
-				header.classList.remove("sticky");
-			}
-		}
-
-
-		// var offset = document.getElementById("proj1-img");
-		// document.getElementById("proj2").style.left = "100px";
-
-		$(document).ready(function() {
-
-			var proj2TopOffset;
-			var proj2LeftOffset;
-			$("#proj1-img").on("load", (function() {
-        	proj2TopOffset = ($(this).height()) * 3 / -4;
-        	proj2LeftOffset = ($(this).width()) + 30;
-			$("#proj2").css('top', proj2TopOffset + "px");
-			$("#proj2").css('left', proj2LeftOffset + "px");
-   			}));
-
-			$(window).resize(function() {
-				var proj2TopOffset;
-			var proj2LeftOffset;
-			$("#proj1-img").on("load", (function() {
-        	proj2TopOffset = ($(this).height()) * 3 / -4;
-        	proj2LeftOffset = ($(this).width()) + 30;
-			$("#proj2").css('top', proj2TopOffset + "px");
-			$("#proj2").css('left', proj2LeftOffset + "px");
-   			}));
-			})   
-	});
-	</script>
-
-	</html>
+</html>
