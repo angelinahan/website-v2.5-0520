@@ -6,257 +6,49 @@
 	<title>Angelina Han</title>
 	<!--links to CSS stylesheet-->
 <!-- 	<link rel="stylesheet" type="text/css" href="css/start.css"> -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Playfair+Display|Libre+Baskerville|Nunito-Sans">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Playfair+Display|Libre+Baskerville|Jost">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<script src="../js/jquery-3.5.0.min.js"></script>
 </head>
 
 <body>
-	<div class="header" id="header">
-		<li id = "title">Angelina Han</li>
-		<div id = "icon-group">
-			<a href="https://www.linkedin.com/in/angelinahan"><img class="icon" id="linkedin" src="../assets/icons/linkedIn.png" alt="LinkedIn logo"></a>
-			<a href="https://github.com/angelinahan"><img class="icon" id="github" src="../assets/icons/github.png" alt="GitHub logo"></a>
-		</div>
-	</div>
-	<hr>
-	<div class = "content">
-<!-- 	<div id = "intro">
-		<p>
-			hi! I'm Angelina Han, a web developer and designer based in Boston, MA. I'm a student at <a href='https://www.northeastern.edu/'>Northeastern University</a>, and currently working as a co-op on the web development team at <a href='https://coverys.com/'>Coverys</a>.
-		</p>
-		<img>
-	</div> -->
-<!-- 	<div id = "project-header">
-		<h2>projects</h2>
-	</div> -->
 	<div id = "proj-wrapper">
+		<div class="header" id="header">
+			<ul>
+					<li id ="title"><a href="index.html">Angelina Han</a></li>
+					<li class="nav-link"><a href="index.html">work</a></li>
+					<li class="nav-link"><a href="about.html">about</a></li>
+			</ul>
+			<hr>
+		</div>
 		<div class="project" id="proj1">
-			<img id = "proj1-img" src='../assets/project-covers/desktop-mindfulness-cover.jpg' alt='screenshot of my website, Desktop Mindfulness'>
-			<p id="proj-text">01. Desktop Mindfulness</p>
-			<p>web development | ux</p>
+			<img id = "proj1-img" src='../assets/project-covers/desktop-mindfulness-illus.jpg' alt='screenshot of my website, Desktop Mindfulness'>
+			<p class="proj-text">01. Desktop Mindfulness</p>
+			<p class="proj-categories">web development | UX </p>
 		</div>
 		<div class="project" id="proj2">
-			<img id = "proj2-img" src='../assets/project-covers/systems.jpg' alt='screenshot of my website, Desktop Mindfulness'>
-			<p id="proj-text">02. Systems</p>
-			<p>graphic design</p>
+			<img id = "proj2-img" src='../assets/project-covers/systems.jpg' alt='poster about an architecture school'>
+			<p class="proj-text">02. Systems</p>
+			<p class="proj-categories">graphic design</p>
 		</div>
-<!-- 		<div class="project" id="graphic-translation">
-			<img>
-		</div> -->
-	</div>
-	<div id ='footer'>
-		<hr>
-		<p>Made with &#9829; by Angelina Han. &copy; 2020</p>
-	</div>
+		<div class="project" id="proj3">
+			<img id = "proj3-img" src='../assets/project-covers/haus-of-taste-poster2.8.jpg' alt='poster advertising a house show'>
+			<p class="proj-text">03. Assorted Posters</p>
+			<p class="proj-categories">graphic design | illustration</p>
+		</div>
+		<div class="project" id="proj4">
+			<img id = "proj4-img" src='../assets/project-covers/surrealLandscape.jpg' alt='landscape painting of a red stone arch and various foliage'>
+			<p class="proj-text">04. Art and Illustration</p>
+			<p class="proj-categories">painting | illustration</p>
+		</div>
+		<div id ='footer'>
+			<hr>
+			<p>Made with &#9829; by Angelina Han. &copy; 2020</p>
+			<div id = "icon-group">
+				<a href="https://www.linkedin.com/in/angelinahan"><img class="icon" id="linkedin" src="../assets/icons/linkedIn.png" alt="LinkedIn logo"></a>
+				<a href="https://github.com/angelinahan"><img class="icon" id="github" src="../assets/icons/github.png" alt="GitHub logo"></a>
+			</div>
+		</div>
 	</div>
 </body>
-
-<style>
-	li {
-		display: inline;
-	}
-
-	hr {
-		height: 2px;
-		background-color: blue;
-	}
-
-	.header-item {
-		padding: 8px;
-	}
-
-	#title {
-		display: flex; 
-		justify-content: center;
-		font-size: 40px;
-		width: 33.3%;
-	}
-
-	.icon {
-		padding: 8px;
-		width: 20px;
-		height: 20px;
-	}
-
-	#icon-group a {
-		display: flex;
-		float: right;
-	}
-
-	.icon-wrapper {
-		display:inline-flex;
-		justify-content: right;
-	}
-
-	.header {
-		margin: auto;
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		font-family: Poppins;
-		color: blue;
-	}
-
-	#header-text {
-		display:flex;
-		justify-content: left;
-		font-size: 15px;
-		width: 33.3%;
-	}
-
-	#icon-group {
-		display: flex;
-		justify-content: right;
-		width: 33.3%;
-	}
-
-	#intro {
-		display: flex; 
-		margin: auto;
-		justify-content: center;
-		width: 70%;
-		font-size: 40px;
-		font-family: Poppins;
-	}
-
-	#project-header {
-		width: 70%;
-		margin: auto;
-		font-family: Poppins;
-		font-size: 40px;
-		color: blue;
-	}
-
-
-	#proj-wrapper {
-		position: relative;
-		width: 80%;
-		margin:auto;
-	}
-
-/*	.project {
-		width: 70%;
-		margin: auto;
-		position: relative;
-		background-color: green;
-		}*/
-
-		#proj-wrapper img {
-			width: 40%;
-			height: auto;
-		}
-
-		#proj-text {
-			font-family: Poppins;
-			font-size: 20px;
-
-		}
-
-		#footer {
-			text-align: center;
-			margin: auto;
-			font-family: Poppins;
-			color: blue;
-		}
-
-		#proj1 {
-			position: relative;
-			margin: auto;
-			padding: 60px;
-		}
-
-		#proj2 {
-			position: relative;
-			margin: auto;
-		}
-
-		@media only screen and (max-width: 1075px) {
-			#proj-wrapper {
-				width: 100%;
-				position: relative;
-				margin: auto;
-			}
-
-			#proj-wrapper img{
-				width: 95%;
-				height: auto;
-				margin: auto;
-			}
-
-			#proj1 {
-				position: relative;
-				padding: 30px;
-				top: 0px;
-				left: 0px;
-				margin: auto;
-			}
-
-			#proj2 {
-				position: relative;
-				padding: 30px;
-				top: 0px;
-				left: 0px;
-				margin: auto;
-			}
-		}
-
-		.sticky {
-			position: fixed;
-			top: 0;
-			width: 100%;
-		}
-
-		.sticky + .content {
-			padding-top: 102px;
-		}
-
-	</style>
-
-
-
-	<!-- loads JavaScript file -->
-	<script src="js/start.js"></script>
-
-	<script>
-		window.onscroll = function() {myFunction()};
-
-		var header = document.getElementById("header");
-		var sticky = header.offsetTop;
-
-		function myFunction() {
-			if (window.pageYOffset > sticky) {
-				header.classList.add("sticky");
-			} else {
-				header.classList.remove("sticky");
-			}
-		}
-
-
-		// var offset = document.getElementById("proj1-img");
-		// document.getElementById("proj2").style.left = "100px";
-
-		$(document).ready(function() {
-
-			var proj2TopOffset;
-			var proj2LeftOffset;
-			$("#proj1-img").on("load", (function() {
-        	proj2TopOffset = ($(this).height()) * 3 / -4;
-        	proj2LeftOffset = ($(this).width()) + 30;
-			$("#proj2").css('top', proj2TopOffset + "px");
-			$("#proj2").css('left', proj2LeftOffset + "px");
-   			}));
-
-			$(window).resize(function() {
-				var proj2TopOffset;
-			var proj2LeftOffset;
-			$("#proj1-img").on("load", (function() {
-        	proj2TopOffset = ($(this).height()) * 3 / -4;
-        	proj2LeftOffset = ($(this).width()) + 30;
-			$("#proj2").css('top', proj2TopOffset + "px");
-			$("#proj2").css('left', proj2LeftOffset + "px");
-   			}));
-			})   
-	});
-	</script>
-
-	</html>
+</html>
