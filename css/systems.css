@@ -1,0 +1,35 @@
+/*Systems*/
+
+.sys-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+
+/* Create four equal columns that sits next to each other */
+
+.sys-column {
+    flex: 15%;
+    max-width: 20%;
+    padding: 0 4px;
+}
+
+.sys-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+#slide-deck {
+    height: 800px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    #slide-deck {
+        height: 400px;
+    }
+}
