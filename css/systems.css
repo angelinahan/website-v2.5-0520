@@ -23,13 +23,21 @@
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-#slide-deck {
-    height: 800px;
-    width: 100%;
+#gallery {
+    display: inline-block;
+    margin-bottom: 2.5%;
+}
+
+#individual-cards img {
+    display: block;
+    width: 100vh;
+    margin: 0 auto;
+    margin-top: 5%;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media only screen and (max-width: 800px) {
-    #slide-deck {
-        height: 400px;
+    #individual-cards img {
+        width: 100%;
     }
 }
