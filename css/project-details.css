@@ -1,0 +1,98 @@
+/* Desktop Mindfulness & other project details*/
+
+#content {
+    width: 70%;
+    margin: auto;
+    padding: 2.5%;
+}
+
+#project-info {
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    grid-template-rows: 100%;
+    grid-column-gap: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+#info-text {
+    grid-row: 1;
+    grid-column: 2;
+    width: 70%;
+}
+
+#title-image {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+}
+
+#title-image img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#attributes {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: auto;
+    padding-bottom: 2.5%;
+}
+
+.attr-category {
+    font-weight: bold;
+}
+
+.attr {
+    margin: 0em;
+}
+
+#areas {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#role {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#dates {
+    grid-row: 1;
+    grid-column: 5;
+}
+
+h2 {
+    font-family: Poppins;
+}
+
+h2 a {
+    color: #000;
+}
+
+h2 a:hover {
+    color: #7395a0;
+    transition: .5s color;
+}
+
+@media only screen and (max-width: 1075px) {
+    #container {
+        width: 90%;
+        margin: auto;
+    }
+    #title-image {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        width: 100;
+    }
+    #project-info {
+        display: inline;
+    }
+    #info-text {
+        width: 100%;
+        vertical-align: bottom;
+        display: table-cell;
+    }
+}

@@ -1,157 +1,180 @@
-li {
-    display: inline;
+:root {
+    --stone-blue: #7395a0;
+}
+
+body {
+    font-family: Poppins, Helvetica, Arial, sans-serif;
+}
+
+p {
+    font-family: Poppins;
+}
+
+p a {
+    color: #000;
+}
+
+p a:hover {
+    color: #7395a0;
+    transition: .5s color;
+}
+
+
+/*https://pythonhow.com/add-css-to-flask-website/*/
+
+.topnav {
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+    padding-top: 1%;
+    text-decoration: none;
+    border-bottom: 2px solid #444;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 17px;
+    color: #444;
+}
+
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    color: var(--stone-blue);
+    transition: .5s color;
+}
+
+
+/* Right-aligned section inside the top navigation */
+
+.topnav-right {
+    float: right;
+}
+
+.header {
+    font-family: Poppins;
+    width: 90%;
+    padding-top: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: auto;
 }
 
 hr {
     height: 2px;
-    background-color: blue;
-}
-
-.header-item {
-    padding: 8px;
-}
-
-#title {
-    display: flex; 
-    justify-content: center;
-    font-size: 40px;
-    width: 33.3%;
-}
-
-.icon {
-    padding: 8px;
-    width: 20px;
-    height: 20px;
-}
-
-#icon-group a {
-    display: flex;
-    float: right;
+    background-color: grey;
+    color: grey;
+    border-width: 0;
 }
 
 .icon-wrapper {
-    display:inline-flex;
+    display: inline-flex;
     justify-content: right;
 }
 
-.header {
-    margin: auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    font-family: Poppins;
-    color: blue;
+#icon-group img {
+    float: right;
+    width: 1.5rem;
+    height: auto;
+    padding: 10px;
 }
-
-#header-text {
-    display:flex;
-    justify-content: left;
-    font-size: 15px;
-    width: 33.3%;
-}
-
-#icon-group {
-    display: flex;
-    justify-content: right;
-    width: 33.3%;
-}
-
-#intro {
-    display: flex; 
-    margin: auto;
-    justify-content: center;
-    width: 70%;
-    font-size: 40px;
-    font-family: Poppins;
-}
-
-#project-header {
-    width: 70%;
-    margin: auto;
-    font-family: Poppins;
-    font-size: 40px;
-    color: blue;
-}
-
 
 #proj-wrapper {
-    position: relative;
-    width: 80%;
-    margin:auto;
+    width: 90%;
+    margin: auto;
 }
 
-/*	.project {
-    width: 70%;
+
+/*Posters and art*/
+
+.proj-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Create four equal columns that sits next to each other */
+
+.proj-column {
+    flex: 33%;
+    max-width: 50%;
+    padding: 5%;
     margin: auto;
-    position: relative;
-    background-color: green;
-    }*/
+}
 
-    #proj-wrapper img {
-        width: 40%;
-        height: auto;
+@media only screen and (max-width: 1075px) {
+    .proj-column {
+        flex: 100%;
+        max-width: 100%;
     }
-
-    #proj-text {
-        font-family: Poppins;
-        font-size: 20px;
-
-    }
-
-    #footer {
-        text-align: center;
-        margin: auto;
-        font-family: Poppins;
-        color: blue;
-    }
-
-    #proj1 {
-        position: relative;
-        margin: auto;
-        padding: 60px;
-    }
-
-    #proj2 {
-        position: relative;
-        margin: auto;
-    }
-
-    @media only screen and (max-width: 1075px) {
-        #proj-wrapper {
-            width: 100%;
-            position: relative;
-            margin: auto;
-        }
-
-        #proj-wrapper img{
-            width: 95%;
-            height: auto;
-            margin: auto;
-        }
-
-        #proj1 {
-            position: relative;
-            padding: 30px;
-            top: 0px;
-            left: 0px;
-            margin: auto;
-        }
-
-        #proj2 {
-            position: relative;
-            padding: 30px;
-            top: 0px;
-            left: 0px;
-            margin: auto;
-        }
-    }
-
-    .sticky {
-        position: fixed;
-        top: 0;
+    #proj-wrapper {
+        display: block;
         width: 100%;
+        position: relative;
+        margin: auto;
     }
+    #project img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+}
 
-    .sticky + .content {
-        padding-top: 102px;
-    }
+.proj-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.proj-text {
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.proj-categories {
+    font-family: Poppins;
+    font-size: 15px;
+}
+
+#proj1-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#footer {
+    font-family: Poppins;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#footer p {
+    float: left;
+}
+
+.project img:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.caption {
+    font-size: 14px;
+    font-style: italic;
+}

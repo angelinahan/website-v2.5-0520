@@ -1,0 +1,75 @@
+#aboutContainer {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#about {
+    font-family: "Roboto", "Arial", serif;
+}
+
+#me {
+    max-width: 25%;
+    text-align: left;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 50px;
+    margin-top: 2%;
+}
+
+#me img {
+    width: 100%;
+    height: auto;
+    box-shadow: 20px 20px #DD9B95;
+}
+
+#aboutHeader {
+    text-align: left;
+    padding: 20px;
+    margin-top: 100px;
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid #0000ff;
+    max-width: 25%;
+    margin-bottom: 50px;
+}
+
+#aboutHeader a {
+    color: #000;
+}
+
+#aboutHeader a:hover {
+    color: #7395a0;
+    transition: .5s color;
+}
+
+#email {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+#email:hover {
+    color: #7395a0;
+    transition: .5s color;
+}
+
+#icons {
+    padding-top: 5%;
+}
+
+#icons img {
+    width: 2rem;
+    height: auto;
+}
+
+@media only screen and (max-width: 1075px) {
+    #me {
+        max-width: 90%;
+        margin: 5%;
+    }
+    #aboutHeader {
+        max-width: 90%;
+        margin: 5%;
+    }
+    #aboutContainer {
+        width: 100%;
+    }
+}
