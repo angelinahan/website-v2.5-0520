@@ -30,8 +30,7 @@
                 <p>Check out the code here: <a href="https://github.com/kfloersch/HackTheEarth">Github repo</a>.</p>
             </div>
             <div id="title-image">
-                <a href="../desktopmindfulness/start.html" target='blank'>
-                    <img src="../assets/recyclable/paper-edited.jpg" alt="a screenshot of the Is This Recyclable site, with the words 'Yes, it's recyclable!' and images and info on how to recycle paper."></a>
+                    <img src="../assets/recyclable/paper-edited.jpg" alt="a screenshot of the Is This Recyclable site, with the words 'Yes, it's recyclable!' and images and info on how to recycle paper.">
             </div>
         </div>
         <div id="attributes">
@@ -52,35 +51,38 @@
         </div>
         <div id="story">
             <p class="attr-category">ABOUT</p>
-            <p>A project created in collaboration with Kyle Floersch and Theo Jolly for Hack The Earth 2020.
-                 Over the course of 36 hours, we created a web app that allows users to upload a picture of 
-                 an item they want to recycle and get more information on its recyclability. 
-                 Our website, <span style="font-weight: bold;">Is This Recyclable?</span>, uses image recognition AI to identify the user-uploaded
-                  image in order to provide recycling information specific to that item.</p>
-            <p class="attr-category">RESEARCH</p>
+            <p>A project created in collaboration with Kyle Floersch and Theo Jolly for Hack The Earth 2020. 
+                Over the course of 36 hours, we created a web app that allows users to upload a picture of an 
+                item they want to recycle and get more information on its recyclability. Our website leverages 
+                image recognition AI to identify the user-uploaded image in order to provide item-specific recycling information. 
+            </p>
             <p>
-                When brainstorming our project, we talked about problems we faced when trying to live a more sustainable lifestyle. 
-                One obstacle that prevented us from recycling more was not knowing if something was recyclable or not. With that in mind,
-                 we created a website that makes it easier to tell recyclables from non-recyclables.</p>
-            <p class="attr-category">TRAINING THE MODEL</p>
+                When brainstorming our project, we agreed that one obstacle preventing us from recycling more was
+                being unsure if something was actually recyclable. With that in mind, we created a website that 
+                makes it easier to tell recyclables from non-recyclables.
+            </p>
+            <p class="attr-category">Development</p>
             <p>
                 We used an open-source graphic recognition library, ImageAI, to train our model on recyclable types.
                  Given the time constraints, we trained it to recognize 7 commonly recyclable / improperly recycled items:
                   bottles, cans, paper, pizza boxes, batteries, plastic bags, and styrofoam. For each item, we collected over 
                   200 photos from the internet to use in our training dataset.</p>
+            <p>We used Python on the back end to process and identify images, and HTML / CSS on the front end for the UI
+                    and image intake form. We served our web app using Flask, a Python framework, which allowed us to run the 
+                    site on the default local domain, http://127.0.0.1:5000/.</p>
             <p class="attr-category">DESIGN</p>
             <p>I created wireframes in Figma, which we referenced when coding the site. I used gentle pastel colors 
                 and sans serif type to convey a feeling of friendliness, in order to make the process of recycling feel 
                 less intimidating.</p>
-            <p class="attr-category">DEVELOPMENT</p>
-            <p>We used Python on the back end to process and identify images, and HTML / CSS on the front end for the UI
-                 and image intake form. We served our web app using Flask, a Python framework, which allowed us to run the 
-                 site on the default local domain, http://127.0.0.1:5000/.</p>
             <p class="attr-category">TAKEAWAYS</p>
             <p>Through this project, I gained a crash-course understanding of Python and Flask. My teammates and I all had 
                 different strengths and specialties, which enabled us to learn from one another and build a finished product 
                 leveraging our combined knowledge.
             </p>
+            <p class="attr-category">Watch the demo video of Is This Recyclable?:</p>
+            <iframe width="400" height="300" frameborder="0"
+            src="https://www.youtube.com/embed/5KiJ5COXGf4">
+            </iframe>
         </div>
     </div>
 
@@ -89,7 +91,7 @@
         <hr>
         <p>Made with &#9829; by Angelina Han. &copy; 2020</p>
         <div id="icon-group">
-            <a href="https://www.behance.net/angelinahan"><img src="/assets/icons/behance.png" alt="Behance logo"></a>
+            <a href="https://www.behance.net/angelinahan"><img src="/assets/icons/behance.jpg" alt="Behance logo"></a>
             <a href="https://github.com/angelinahan"><img class="icon" id="github" src="../assets/icons/github.png" alt="GitHub logo"></a>
             <a href="https://www.linkedin.com/in/angelinahan"><img class="icon" id="linkedin" src="../assets/icons/linkedIn.png" alt="LinkedIn logo"></a>
         </div>
