@@ -1,6 +1,7 @@
 iframe {
     width: 600px;
     height: 450px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .section {
@@ -12,6 +13,7 @@ iframe {
     height: auto;
     margin-right: 5%;
     margin-top: 0px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .images {
@@ -24,6 +26,7 @@ iframe {
     height: auto;
     margin-right: 5%;
     margin-top: 0px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .images-screens {
