@@ -60,7 +60,7 @@ p a:hover {
 }
 
 .header {
-    font-family: Poppins;
+    font-family: Raleway;
     width: 90%;
     padding-top: 30px;
     padding-left: 5%;
@@ -143,13 +143,13 @@ hr {
 }
 
 .proj-text {
-    font-family: Poppins;
+    font-family: Raleway;
     font-size: 25px;
     font-weight: bold;
 }
 
 .proj-categories {
-    font-family: Poppins;
+    font-family: Raleway;
     font-size: 15px;
 }
 
