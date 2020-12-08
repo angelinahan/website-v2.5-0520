@@ -53,6 +53,9 @@
 
 #icons {
     padding-top: 5%;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
 }
 
 #icons img {
