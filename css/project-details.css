@@ -64,15 +64,24 @@
     grid-column: 5;
 }
 
-h2 {
+.ah-link-dm {
     font-family: Raleway;
 }
 
-h2 a {
+.ah-link-dm a {
     color: #000;
 }
 
-h2 a:hover {
+.ah-link-dm a:hover {
+    color: #7395a0;
+    transition: .5s color;
+}
+
+.ah-link {
+    color: #000;
+}
+
+.ah-link:hover {
     color: #7395a0;
     transition: .5s color;
 }
