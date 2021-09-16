@@ -5,15 +5,18 @@
 
 #about {
     font-family: "Raleway", "Helvetica", sans-serif;
+    display: flex;
+    width: 55%;
+    margin: auto;
+    justify-content: space-between;
 }
 
 #me {
-    max-width: 25%;
+    /* max-width: 25%; */
     text-align: left;
     display: inline-block;
     font-size: 20px;
-    margin-right: 50px;
-    margin-top: 2%;
+    margin: 5% 5% 10% 0;
 }
 
 #me img {
@@ -22,22 +25,28 @@
     box-shadow: 20px 20px #DD9B95;
 }
 
-#aboutHeader {
-    text-align: left;
-    padding: 20px;
+.col {
+    width: 46%;
+}
+
+.aboutHeader {
     margin-top: 100px;
     display: inline-block;
     vertical-align: top;
-    border: 2px solid #0000ff;
-    max-width: 25%;
     margin-bottom: 50px;
 }
 
-#aboutHeader a {
+.aboutBlueBox {
+    text-align: left;
+    padding: 20px;
+    border: 2px solid #0000ff;
+}
+
+.aboutBlueBox a {
     color: #000;
 }
 
-#aboutHeader a:hover {
+.aboutBlueBox a:hover {
     color: #7395a0;
     transition: .5s color;
 }
