@@ -1,94 +1,95 @@
 #aboutContainer {
-    text-align: center;
-    padding-top: 20px;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 40px;
 }
 
 #about {
-    font-family: "Raleway", "Helvetica", sans-serif;
-    display: flex;
-    width: 55%;
-    margin: auto;
-    justify-content: space-between;
+  font-family: "Raleway", "Helvetica", sans-serif;
+  display: flex;
+  width: 55%;
+  margin: auto;
+  justify-content: space-between;
 }
 
 #me {
-    /* max-width: 25%; */
-    text-align: left;
-    display: inline-block;
-    font-size: 20px;
-    margin: 5% 5% 10% 0;
+  /* max-width: 25%; */
+  text-align: left;
+  display: inline-block;
+  font-size: 20px;
+  margin: 5% 5% 10% 0;
 }
 
 #me img {
-    width: 100%;
-    height: auto;
-    box-shadow: 20px 20px #DD9B95;
+  width: 100%;
+  height: auto;
+  box-shadow: 20px 20px #004b4f;
 }
 
 .col {
-    width: 46%;
+  width: 46%;
 }
 
 .aboutHeader {
-    margin-top: 100px;
-    display: inline-block;
-    vertical-align: top;
-    margin-bottom: 50px;
+  margin-top: 100px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 50px;
 }
 
 .aboutBlueBox {
-    text-align: left;
-    padding: 20px;
-    border: 2px solid #0000ff;
+  text-align: left;
+  padding: 20px;
+  border: 2px solid #0e4c87;
 }
 
 .aboutBlueBox a {
-    color: #000;
+  color: #000;
 }
 
 .aboutBlueBox a:hover {
-    color: #7395a0;
-    transition: .5s color;
+  color: #7395a0;
+  transition: 0.5s color;
 }
 
 #email {
-    font-family: Poppins, Raleway, Helvetica, sans-serif;
+  font-family: Poppins, Raleway, Helvetica, sans-serif;
 }
 
 #email:hover {
-    color: #7395a0;
-    transition: .5s color;
+  color: #7395a0;
+  transition: 0.5s color;
 }
 
 #icons {
-    padding-top: 5%;
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
+  padding-top: 5%;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
 }
 
 #icons img {
-    width: 2rem;
-    height: auto;
+  width: 2rem;
+  height: auto;
 }
 
 @media only screen and (max-width: 1075px) {
-    #me {
-        max-width: 90%;
-        margin: 5%;
-    }
-    #aboutHeader {
-        max-width: 90%;
-        margin: 5%;
-    }
-    #aboutContainer {
-        width: 100%;
-    }
+  #me {
+    max-width: 90%;
+    margin: 5%;
+  }
+  #aboutHeader {
+    max-width: 90%;
+    margin: 5%;
+  }
+  #aboutContainer {
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
-    #icons {
-        width: 100%;
-        margin: 5% 0px;
-    }
+  #icons {
+    width: 100%;
+    margin: 5% 0px;
+  }
 }
